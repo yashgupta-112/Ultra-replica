@@ -50,11 +50,33 @@
 </template>
 
 <script>
+import {ref} from "vue";
 import { useStore } from 'vuex'
+import { onMounted } from 'vue';
+import axios from "axios";
 export default {
     setup() {
     const store = useStore()
     store.state.login.ClientName = localStorage.getItem('ClientName')
+     
+   let username = ref ('');
+  
+   username.value = localStorage.getItem('ClientName')
+
+   function fetch_ticket(){
+     axios.get(`http://127.0.0.1:8000/fetch-ticket/${username.value}/`).then((response)=>{
+       store.state.login.totalticket = response.data.length
+     
+       
+     })
+   }
+
+  onMounted(() => {
+
+    fetch_ticket();
+  })
+
+   return{username,fetch_ticket}
     },
 }
 </script>
