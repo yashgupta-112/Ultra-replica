@@ -1,0 +1,4 @@
+<template>
+   <PricingComponent></PricingComponent>
+</template>
+

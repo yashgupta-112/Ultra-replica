@@ -1,0 +1,3 @@
+<template>
+    <ClientNav></ClientNav>
+</template>

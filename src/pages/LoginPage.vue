@@ -1,0 +1,3 @@
+<template>
+    <LoginPage></LoginPage>
+</template>

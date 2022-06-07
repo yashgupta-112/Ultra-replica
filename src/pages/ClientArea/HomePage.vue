@@ -1,0 +1,4 @@
+<template>
+    
+   <BillingComponent></BillingComponent>
+</template>

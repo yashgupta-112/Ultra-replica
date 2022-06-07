@@ -1,0 +1,3 @@
+<template>
+    <BaseAdmin></BaseAdmin>
+</template>
