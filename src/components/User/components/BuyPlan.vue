@@ -64,7 +64,7 @@ export default {
    username.value = localStorage.getItem('ClientName')
 
    function fetch_ticket(){
-     axios.get(`http://127.0.0.1:8000/fetch-ticket/${username.value}/`).then((response)=>{
+     axios.get(`https://ultradev-api.herokuapp.com/fetch-ticket/${username.value}/`).then((response)=>{
        store.state.login.totalticket = response.data.length
      
        

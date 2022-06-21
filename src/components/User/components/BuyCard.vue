@@ -34,7 +34,7 @@ export default {
          const store = useStore()
          function OrderService(name,price) {
              
-            axios.post("http://127.0.0.1:8000/place-order",{
+            axios.post("https://ultradev-api.herokuapp.com/place-order",{
             user : localStorage.getItem('ClientName'),
             service : name,
             price : price

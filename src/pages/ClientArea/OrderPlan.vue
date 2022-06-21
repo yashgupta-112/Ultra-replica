@@ -35,7 +35,7 @@ export default {
         const store = useStore()
         //   const router = useRouter()
         function Getplandata() {
-            axios.get("http://127.0.0.1:8000/plan-api").then((response) => {
+            axios.get("https://ultradev-api.herokuapp.com/plan-api").then((response) => {
 
                 for (let i = 0; i < response.data.length; i++) {
                     store.state.info.listplan.push(response.data[i])
@@ -56,7 +56,7 @@ export default {
         }
         // tank plan
         function Gettankplandata() {
-            axios.get("http://127.0.0.1:8000/plan-api").then((response) => {
+            axios.get("https://ultradev-api.herokuapp.com/plan-api").then((response) => {
 
                 for (let i = 0; i < response.data.length; i++) {
                     if (response.data[i].type == "tank") {
@@ -73,7 +73,7 @@ export default {
 
         // Tank plan function end here and NVME start header
         function Getnvmeplandata() {
-            axios.get("http://127.0.0.1:8000/plan-api").then((response) => {
+            axios.get("https://ultradev-api.herokuapp.com/plan-api").then((response) => {
 
                 for (let i = 0; i < response.data.length; i++) {
                     if (response.data[i].type == "NVME") {

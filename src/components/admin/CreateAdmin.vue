@@ -56,7 +56,7 @@ export default {
         }
 
         function create_admin() {
-            axios.post("http://127.0.0.1:8000/create-admin", {
+            axios.post("https://ultradev-api.herokuapp.com/create-admin", {
                 username: username.value,
                 email: email.value,
                 password: password.value,

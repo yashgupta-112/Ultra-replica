@@ -77,7 +77,7 @@ export default {
     function sumbit() {
       
       console.log(
-      axios.post("http://127.0.0.1:8000/new-plan", {
+      axios.post("https://ultradev-api.herokuapp.com/new-plan", {
         type: plan_type.value,
         name: plan_name.value,
         storage: plan_storage.value,

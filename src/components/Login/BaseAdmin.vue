@@ -58,7 +58,7 @@ export default {
         // }
 
         function sumbitForm() {
-            axios.post("http://127.0.0.1:8000/admin-auth", {
+            axios.post("https://ultradev-api.herokuapp.com/admin-auth", {
                 username: username.value,
                 password: pass.value,
             }).then(response => {

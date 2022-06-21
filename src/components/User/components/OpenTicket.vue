@@ -65,7 +65,7 @@ export default {
         let FormSumbit = ref(false);
 
         function sumbit() {
-            axios.post("http://127.0.0.1:8000/sysadmin", {
+            axios.post("https://ultradev-api.herokuapp.com/sysadmin", {
                 user: localStorage.getItem('ClientName'),
                 subject: subject.value,
                 priority: priority.value,

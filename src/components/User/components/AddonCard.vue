@@ -24,7 +24,7 @@ export default {
     ],
     setup(){
       function OrderTraffic(traffic,price) {
-        axios.post("http://127.0.0.1:8000/place-order",{
+        axios.post("https://ultradev-api.herokuapp.com/place-order",{
             user : localStorage.getItem('ClientName'),
             service : "Addon-"+traffic+"TB",
             price : price

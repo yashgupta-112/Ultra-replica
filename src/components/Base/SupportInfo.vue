@@ -32,7 +32,7 @@ export default {
     const store = useStore()
     function GetInfo() {
 
-      fetch('http://127.0.0.1:8000/info-api').then(response => {
+      fetch('https://ultradev-api.herokuapp.com/info-api').then(response => {
         if (response.ok) {
           return response.json();
         }

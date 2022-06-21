@@ -130,7 +130,7 @@ export default {
 
     function sumbit() {
       validation();
-      axios.put(`http://127.0.0.1:8000/plan-update/${plan_id.value}/`, {
+      axios.put(`https://ultradev-api.herokuapp.com/${plan_id.value}/`, {
         type: plan_type.value,
         name: plan_name.value,
         storage: plan_storage.value,

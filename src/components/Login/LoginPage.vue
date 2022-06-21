@@ -125,7 +125,7 @@ export default {
 
 		function SendQuery() {
 			axios
-				.post("http://127.0.0.1:8000/user-signup", {
+				.post("https://ultradev-api.herokuapp.com/user-signup", {
 					username: firstname.value,
 					password: password.value,
 					email: email.value,
@@ -161,7 +161,7 @@ export default {
 		}
 
 		function userlogin() {
-			axios.post("http://127.0.0.1:8000/api/api-token/", {
+			axios.post("https://ultradev-api.herokuapp.com/api/api-token/", {
 				username: username.value,
 				password: pass.value,
 			}).then((response) => {

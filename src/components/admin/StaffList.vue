@@ -106,7 +106,7 @@ export default {
   methods: {
         GetTicketdata(){
           
-          axios.get('http://127.0.0.1:8000/plan-api').then((response) =>{
+          axios.get('https://ultradev-api.herokuapp.com/plan-api').then((response) =>{
             // console.log(response.data)
             this.$store.state.plan.allplanlist = response.data
           })

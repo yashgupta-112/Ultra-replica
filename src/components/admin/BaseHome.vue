@@ -79,7 +79,7 @@ export default {
 
     function Sumbit() {
       console.log(annouce.value,waitvar.value,replyvar.value)
-       axios.post("http://127.0.0.1:8000/sumbit-info", {
+       axios.post("https://ultradev-api.herokuapp.com/sumbit-info", {
                 waiting: waitvar.value,
                 news: annouce.value ,
                 reply: replyvar.value,
